@@ -1,5 +1,7 @@
 # Omni-Static-Page
 
+Checkout the live site here! https://hazfaiz-omnifood.netlify.app/
+
 Static homepage for the fictional healthy food delivery company OmniFood
 
 Built using HTML, CSS, Jquery and Javascript
