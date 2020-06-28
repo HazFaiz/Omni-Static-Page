@@ -112,4 +112,27 @@ $(document).ready(function () {
     },
     { offset: "60%" }
   );
+
+  // Mobile navigation
+
+  $(".js--nav-icon").click(function () {
+    var nav = $(".js--main-nav");
+    var icon = $("js--nav-icon ion-icon");
+    var selector = document.getElementById("icon-test");
+    nav.slideToggle(200);
+
+    if (selector.getAttribute("name") === "menu-outline") {
+      selector.setAttribute("name", "close-outline");
+    } else {
+      selector.setAttribute("name", "menu-outline");
+    }
+
+    // if (icon.hasClass(".menu-outline")) {
+    //   icon.addClass("close-outline");
+    //   icon.removeClass(".menu-outline");
+    // } else {
+    //   icon.addClass(".menu-outline");
+    //   icon.removeClass("close-outline");
+    // } //Dont know how to target "name" attribute with jquery, used js instead
+  });
 });
